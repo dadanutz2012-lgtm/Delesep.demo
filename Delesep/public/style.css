@@ -1,0 +1,9 @@
+body{font-family:Arial,sans-serif;background:#e5f2e5;color:#0b3d0b;margin:0;padding:0;}
+header{background:#2e7d32;color:white;padding:10px;text-align:center;}
+nav{padding:10px;text-align:center;}
+button{margin:5px;padding:5px 10px;background:#4caf50;color:white;border:none;border-radius:5px;cursor:pointer;}
+button:hover{background:#388e3c;}
+section{margin:20px;padding:10px;background:#c8e6c9;border-radius:10px;}
+input{padding:5px;margin:5px;border-radius:5px;border:1px solid #4caf50;}
+ul{list-style:none;padding:0;}
+li{padding:5px;margin:5px 0;background:#a5d6a7;border-radius:5px;}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Délésep - Admin</title>
+<link rel="stylesheet" href="style.css">
+<script src="js/admin.js" defer></script>
+</head>
+<body>
+<header><h1>Admin Panel</h1></header>
+
+<section>
+<button onclick="clearAllMessages()">Supprimer tous les messages</button>
+<button onclick="clearAllIdeas()">Supprimer toutes les idées</button>
+<button onclick="clearAgenda()">Supprimer agenda</button>
+<button onclick="clearComptesRendus()">Supprimer comptes rendus</button>
+<button onclick="clearInitiatives()">Supprimer initiatives</button>
+<button onclick="changePasswords()">Changer mots de passe</button>
+</section>
+
+<section>
+<h2>Ajouter un événement à l’agenda</h2>
+<input type="text" id="agendaInput" placeholder="Nouvel événement">
+<button onclick="addAgenda()">Ajouter</button>
+<ul id="agendaList"></ul>
+</section>
+
+<section>
+<h2>Comptes rendus</h2>
+<input type="text" id="crInput" placeholder="Nouveau compte rendu">
+<button onclick="addCR()">Ajouter</button>
+<ul id="crList"></ul>
+</section>
+
+<section>
+<h2>Initiatives</h2>
+<input type="text" id="initInput" placeholder="Nouvelle initiative">
+<button onclick="addInit()">Ajouter</button>
+<ul id="initList"></ul>
+</section>
+</body>
+</html>

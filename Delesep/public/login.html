@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Connexion Délégués</title>
+<link rel="stylesheet" href="style.css">
+<script>
+function login() {
+    const name = document.getElementById("name").value.trim() || "Délégué";
+    const password = document.getElementById("password").value.trim();
+    const storedPassword = localStorage.getItem("deleguePassword") || "delegue2025";
+    if(password === storedPassword){
+        localStorage.setItem("userName", name);
+        window.location.href = "pro.html";
+    } else alert("Mot de passe incorrect !");
+}
+</script>
+</head>
+<body>
+<header><h1>Connexion Délégués</h1></header>
+<section>
+<input type="text" id="name" placeholder="Votre nom">
+<input type="password" id="password" placeholder="Mot de passe">
+<button onclick="login()">Se connecter</button>
+</section>
+</body>
+</html>
